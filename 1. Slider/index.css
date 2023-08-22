@@ -1,0 +1,50 @@
+body{
+    background: #f3f3f3;
+    width: 100%;
+}
+.slider{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider__container{
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.slider__img_box{
+    position: relative;
+    width: 800px;
+    height: 550px;
+    display: flex;
+    transition: transform 0.9s;
+}
+
+.img_box__item{
+    flex: 0 0 100%;
+}
+
+.img_box__item img{
+    width: 100%;
+    height: 100%;
+}
+.btn__prev, .btn__next{
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    top: 40%;
+    transition: 0.8s;
+}
+.btn__prev:hover, .btn__next:hover{
+    background: grey;
+    transition: 0.8s;
+
+}
+.btn__prev{
+    left: -13%;
+    opacity: 30%;
+}
+.btn__next{
+    right: -13%;
+}

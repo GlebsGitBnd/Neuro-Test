@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="user_info">
+        <div class="user_info__info_header">
+            <h1 class="info_header__text">User Info</h1>
+        </div>
+        <div class="user_info__form_container">
+            <form method="GET" id="reg_Form">
+                <label class="user_info__label">
+                    <span>First Name:</span>
+                    <span class="wrong">wrong first name</span><br>
+                    <input type="text" name="firstName">
+                </label><br>
+                <label class="user_info__label">
+                    <span>Phone number:</span>
+                    <span class="wrong">wrong number</span><br>
+                    <input type="text" name="phone"><br>
+                </label>
+                <label class="user_info__label">
+                    <span>Password:</span>
+                    <span class="wrong">wrong password</span><br>
+                    <input type="password" name="password"><br>
+                </label>
+                <label class="user_info__label">
+                    <span>Repeat:</span>
+                    <span class="wrong">Password must match</span><br>
+                    <input type="password" name="repPassword"><br>
+                </label>
+                <label>
+                    <input type="submit" value="Sing Up">
+                </label>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

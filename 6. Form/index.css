@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_info__form_container{
+    position: relative;
+}
+
+.user_info__info_header{
+    display: flex;
+    justify-content: center;
+}
+
+.wrong {
+    position: absolute;
+    right: 0;
+    color: #be3d3d;
+    display: none;
+}
+
+input, select {
+    width: 252px;
+    height: 22px;
+    font-size: 10px;
+    margin-bottom: 8px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid gray;
+}

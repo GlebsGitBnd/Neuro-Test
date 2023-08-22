@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.figure {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #ff8744;
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    display: none;
+    animation: hide 1s forwards;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #3e7345;
+    position: absolute;
+    top: 0;
+    display: none;
+    animation: hide 1s forwards;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    background: brown;
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    display: none;
+    animation: hide 1s forwards;
+}
+
+.rectangle {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    background: darkmagenta;
+    top: 60px;
+    cursor: pointer;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        display: initial;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.active {
+    animation: show 1s forwards;
+    display: initial;
+}
