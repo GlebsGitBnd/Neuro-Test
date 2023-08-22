@@ -55,6 +55,13 @@ body {
     cursor: pointer;
 }
 
+.debounce{
+    position: absolute;
+    bottom: 5%;
+    font-size: 40px;
+    visibility: hidden;
+}
+
 @keyframes hide {
     0% {
         opacity: 1;

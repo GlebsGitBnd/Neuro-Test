@@ -24,13 +24,13 @@ class Employee {
 
     //Отрисовка карточек по итогу запроса
     async cardRender(queryString) {
-        let response
+        const response = await this.getDataPerson(this.url + queryString)
+        const resDataSort = response.data.sort((a, b) => a.first_name > b.first_name ? 1 : -1)
 
-        response = await this.getDataPerson(this.url + queryString)
         this.dataContainer.innerHTML = ''
         this.paginationContainer.innerHTML = ''
 
-        response.data.forEach((person) => {
+        resDataSort.forEach((person) => {
             this.dataContainer.innerHTML += `
         <div class="people_info__person">
             <div class="person__avatar">

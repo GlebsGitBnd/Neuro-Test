@@ -16,4 +16,8 @@ video1.addEventListener('timeupdate', () => {
     videoTime.innerText = `${minutes}:${seconds}:${milliseconds}`
 })
 
+video1.addEventListener('ended', () => {
+    video1.currentTime = 0;
+})
+
 // Миллисекунды так и должны неравномерно идти?
